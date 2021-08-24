@@ -1,0 +1,40 @@
+@keyframes menu-bar {
+    0% {
+        background-color: rgba(80, 214, 196, 0.829);
+    }
+    25% {
+        background-color: rgba(255, 255, 255, 0.267);
+    }
+    50% {
+        background-color: rgba(80, 214, 196, 0.466);
+    }
+    100% {
+        background-color: rgba(80, 214, 196, 0.384);
+    }
+}
+
+.barB {
+    text-align: end;
+}
+
+.menu-animation {
+    animation-name: menu-bar;
+    animation-iteration-count: initial;
+    animation-duration: 2s;
+    background-color: rgba(80, 214, 196, 0.384);
+}
+
+.menu-size:hover {
+    transform: scale(1.3, 1.3);
+    cursor: pointer;
+}
+
+.vanish hover {
+    transform: scale(1.1, 2.2);
+    cursor: pointer;
+}
+
+.escala hover {
+    transform: scale(1.1, 2.2);
+    cursor: pointer;
+}

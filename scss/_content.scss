@@ -1,0 +1,25 @@
+.section__background {
+    background-color: rgba(177, 255, 230, 0.301);
+}
+
+.section__backgroundOther {
+    background-color: rgba(255, 115, 115, 0.63);
+}
+
+.section__backgroundCalm {
+    background-color: rgba(115, 215, 255, 0.63);
+}
+
+.containerCuadrosB {
+    padding: 10px;
+    margin-bottom: 10%;
+    margin-right: 10%;
+    margin-left: 10%;
+    border: solid 1px black;
+    background-color: rgba(0, 0, 0, 0.100);
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    row-gap: 30px;
+    place-items: center stretch;
+}

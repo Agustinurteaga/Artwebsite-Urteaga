@@ -1,0 +1,177 @@
+/*flex para distintas medidas */
+
+.containerCuadros {
+    padding: 10px;
+    margin-bottom: 10%;
+    margin-right: 10%;
+    margin-left: 10%;
+    border: solid 1px black;
+    background-color: rgba(0, 0, 0, 0.100);
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    row-gap: 30px;
+    place-items: center stretch;
+}
+
+
+/* Nav y Margenes */
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html {
+    background-color: rgba150, 150, 150, 5;
+    font-size: 100%;
+}
+
+a {
+    color: inherit
+}
+
+.barra {
+    list-style: none;
+    list-style-position: inside;
+    font-size: inherit;
+}
+
+header nav ul li a :hover {
+    cursor: pointer;
+    background-color: black;
+}
+
+li {
+    display: inline-block;
+    position: relative;
+}
+
+ul ul {
+    position: absolute;
+    display: none;
+    text-align: left;
+    padding: 40%;
+}
+
+ul ul li {
+    display: block;
+}
+
+ul li:hover ul {
+    display: block;
+}
+
+
+/* id borde */
+
+#aborde {
+    background-color: rgba(80, 214, 196, 0.5);
+    border-style: double;
+    border-width: 1px;
+    border-color: rgba(80, 214, 196, 0.5);
+    padding: 20px;
+}
+
+
+/* H 1 2 3 4 5 ... */
+
+nav {
+    background-color: rgba(80, 214, 196, 0.5);
+    color: inherit;
+    text-align: center;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    font-size: 20px;
+    word-spacing: 100px;
+    padding: 10px;
+}
+
+h1 {
+    color: rgb(0, 0, 0);
+    font-family: 'Open Sans', sans-serif;
+    font-size: 30px;
+    word-spacing: 5px;
+    letter-spacing: 0px;
+    padding: 10px;
+    text-transform: capitalize;
+    text-align: left;
+    text-decoration: underline overline;
+    position: absolute;
+}
+
+h2 {
+    color: #4aa9b9;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+h3 {
+    color: rgba(150, 100, 100, 5);
+    text-align: center;
+    text-transform: capitalize;
+}
+
+h4 {
+    color: seagreen;
+    text-transform: capitalize;
+}
+
+
+/* Secciones, footer, header */
+
+body {
+    background-image: url(./multimedia/imagenes/fondo.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+}
+
+section p {
+    color: rgb(75, 121, 167);
+    line-height: 2rem;
+}
+
+section p em {
+    color: tomato;
+    line-height: 2rem;
+}
+
+footer {
+    background-image: url(./multimedia/imagenes/footertest.png);
+    background-repeat: repeat-x;
+    background-blend-mode: saturation;
+    background-color: rgba(200, 200, 200, 3);
+    color: #4d6d0c;
+    clear: left;
+}
+
+
+/* Colores personalizados */
+
+.shopStyleB {
+    color: rgba(139, 43, 107, 0.712);
+}
+
+.tableStyle {
+    margin: 1px;
+    padding: 1px;
+}
+
+
+/* Tipografias */
+
+.tipoStatement {
+    color: rgb(20, 50, 20);
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 100;
+    font-size: 16;
+    text-align: center;
+    margin-top: 50px;
+    margin-left: 100px;
+    margin-right: 100px;
+    padding: 5px;
+    text-transform: none;
+    line-height: 2rem;
+}
