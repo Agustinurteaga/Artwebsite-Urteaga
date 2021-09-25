@@ -5,10 +5,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/main.css">
     <title>Romina.Ger / Obra</title>
-    <meta name="description" content="Romina Ger - Porfolio, obras y retratos">
+    <meta name="Statement" content="Romina Ger - Porfolio, obras y retratos">
     <meta name="keywords" content="Arte, Cuadros, Retratos, Servicios, Mascotas, Oleos">
     <meta name="author" content="Agustin Urteaga">
 
@@ -48,24 +47,36 @@
             </nav>
         </header>
 
-        <!--  slideBar  -->
-        <section class="padbar slideBar space-50">
 
-
-            <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
-                <div class="carousel-inner">
+        <section class="padbar slideBar">
+            <div id="myCarousel" class="carousel slide bg-inverse ms-auto me-auto" data-bs-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"></li>
+                    <li data-bs-target="#myCarousel" data-bs-slide-to="1"></li>
+                    <li data-bs-target="#myCarousel" data-bs-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner" role="listbox">
                     <div class="carousel-item active">
-                        <img class="d-block w-100" src="./multimedia/imagenes/BanerA.jpg" alt="First slide">
+                        <img class="d-block w-100" src="./multimedia/imagenes/BanerA.jpg" alt="Conjunto de retratos">
                     </div>
                     <div class="carousel-item">
-                        <img class="d-block w-100" src="./multimedia/imagenes/BanerB.jp" alt="Second slide">
+                        <img class="d-block w-100" src="./multimedia/imagenes/BanerB.jpg" alt="Conjunto de retratos">
                     </div>
                     <div class="carousel-item">
-                        <img class="d-block w-100" src="./multimedia/imagenes/BanerC.jpg" alt="Third slide">
+                        <img class="d-block w-100" src="./multimedia/imagenes/BanerC.jpg" alt="Conjunto de retratos">
                     </div>
                 </div>
+                <a class="carousel-control-prev" href="#myCarousel" role="button" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#myCarousel" role="button" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </a>
             </div>
         </section>
+
 
 
         <section class="mainArea ">
@@ -117,6 +128,8 @@
         </section>
 
     </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+
 </body>
 
 

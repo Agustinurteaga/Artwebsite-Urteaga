@@ -35,7 +35,8 @@
   background-color: #232f3e;
   padding: 1%;
   clear: both;
-  position: relative; }
+  position: relative;
+  text-align: center; }
 
 .slideBar {
   margin-top: 1%;
@@ -173,3 +174,6 @@ h4 {
   justify-content: space-around;
   row-gap: 30px;
   place-items: center stretch; }
+
+.alingsection {
+  text-align: center; }
