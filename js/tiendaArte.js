@@ -1,39 +1,45 @@
 /* Comprar retratos */
-function updateMonto(montoSumar) {
+function updateMonto(monto) {
     let stringMonto = "Monto total: "
     let spanMonto = document.getElementById("displayMontoTotal")
-    let monto = Number(spanMonto.textContent.replace(stringMonto, ""))
-    monto = monto + Number(montoSumar)
+        /*let monto = Number(spanMonto.textContent.replace(stringMonto, ""))
+        monto = monto + Number(montoSumar)
+        */
     spanMonto.textContent = (stringMonto + monto)
 }
-
 
 var elecciones = document.getElementsByClassName("checkboxProducto")
 var precio = document.getElementsByClassName("precioProducto")
 
-
-/* restar monto con jquarry */
 /* Guardar en un session storage para agregar 2 eventos[ agregar con click, restar destildando] */
+/* a cada check, revisar el atributo, active. booleano/ dependiendo del valor. */
 
-
-for (i = 0; i < elecciones.length; i++) {
-    let currentPrice = precio[i].textContent
-    elecciones[i].onclick = () => {
-
-        updateMonto(currentPrice)
+function updateCheckbox() {
+    for (let i = 0; i < elecciones.length; i++) {
+        elecciones[i].onclick = () => {
+            let currentValue = elecciones[i].getAttribute("value")
+            if (currentValue == "true") {
+                elecciones[i].setAttribute("value", "false")
+            } else {
+                elecciones[i].setAttribute("value", "true")
+            }
+        }
     }
-
 }
+updateCheckbox()
 
-/* envio */
+/* Jquary  */
 
-var radio1 = document.getElementById("Radio1")
-radio1.onclick = () => {
+$("#displayJquary").click(function() {
 
-}
+    let totalPrice = 0
+    for (i = 0; i < elecciones.length; i++) {
+        let currentPrice = Number(precio[i].textContent)
+        let currentValue = elecciones[i].getAttribute("value")
+        if (currentValue == "true") {
+            totalPrice = totalPrice + currentPrice
+        }
+    }
+    updateMonto(totalPrice)
 
-var radio2 = document.getElementById("Radio2")
-radio2.onclick = () => {
-
-
-}
+})
