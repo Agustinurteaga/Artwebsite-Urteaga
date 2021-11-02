@@ -31,7 +31,6 @@ updateCheckbox()
 /* Jquary  */
 
 $("#displayJquary").click(function() {
-
     let totalPrice = 0
     for (i = 0; i < elecciones.length; i++) {
         let currentPrice = Number(precio[i].textContent)
@@ -41,5 +40,8 @@ $("#displayJquary").click(function() {
         }
     }
     updateMonto(totalPrice)
-
 })
+
+/* Animacion de fade */
+
+$(".fadeInicio").fadeIn("Slow").fadeOut("Slow").fadeIn("Slow").fadeIn("Slow").fadeOut("Slow").fadeIn("Slow");

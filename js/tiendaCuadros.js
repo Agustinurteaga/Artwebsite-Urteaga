@@ -26,6 +26,11 @@ const cuadro6 = { id: 6, obra: "Romina Ger #6 - 2019", precioObra: 3200 };
 const cuadro7 = { id: 7, obra: "Romina Ger #7 - 2019", precioObra: 1000 };
 const cuadro8 = { id: 8, obra: "Romina Ger #8 - 2019", precioObra: 1000 };
 const cuadro9 = { id: 9, obra: "CRomina Ger #9 - 2018", precioObra: 3200 };
-const cuadro9 = { id: 9, obra: "Romina Ger #10 - 2019", precioObra: 1000 };
+const cuadro10 = { id: 9, obra: "Romina Ger #10 - 2019", precioObra: 1000 };
 
-/* carrito logo y suma  */
+/*  visible e invisible */
+
+$(".eventoFade").on("click", () => {
+    $(".eventoCard").fadeOut(1000);
+
+})
