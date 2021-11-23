@@ -1,11 +1,8 @@
-/*Problema de clase                      */
-
+/*Problema de clase*/
 
 function setTemperatura(temperatura) {
     console.log(temperatura)
     document.getElementById("temperatura").textContent = temperatura
-
-
 }
 /*Solucion al problema */
 
@@ -19,7 +16,7 @@ $.ajax({
     }
 });
 
-/*Ejemplo de clase                      */
+/*Ejemplo de clase*/
 
 const url = 'http://hp-api.herokuapp.com/api/characters'
 
@@ -44,7 +41,7 @@ $('#btn').click(() => {
     })
 })
 
-/*Testeo                      */
+/*Testeo*/
 
 const canvas = document.getElementById('canvas');
 const ctx = canvas.getContext('2d');

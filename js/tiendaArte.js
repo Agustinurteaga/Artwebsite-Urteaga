@@ -29,7 +29,6 @@ function updateCheckbox() {
 updateCheckbox()
 
 /* Jquary  */
-
 $("#displayJquary").click(function() {
     let totalPrice = 0
     for (i = 0; i < elecciones.length; i++) {
@@ -43,5 +42,4 @@ $("#displayJquary").click(function() {
 })
 
 /* Animacion de fade */
-
-$(".fadeInicio").fadeIn("Slow").fadeOut("Slow").fadeIn("Slow").fadeIn("Slow").fadeOut("Slow").fadeIn("Slow");
+$(".fadeInicio").fadeIn("Slow");
